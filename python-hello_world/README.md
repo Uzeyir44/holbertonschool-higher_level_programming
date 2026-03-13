@@ -19,3 +19,7 @@ Prints the string 3 times and then first 9 characters of string at the new line
 ###6-concat.py
 
 Concatonates two string and then prints the result
+
+###7-edges.py
+
+Prints first 3, then last 2, then all characters expect first and last of a string
