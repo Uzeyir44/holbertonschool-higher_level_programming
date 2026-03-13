@@ -23,3 +23,7 @@ Concatonates two string and then prints the result
 ###7-edges.py
 
 Prints first 3, then last 2, then all characters expect first and last of a string
+
+###8-concat_edges.py
+
+Prints the specifi parts of string by concatonating
