@@ -15,3 +15,7 @@ Prints floating number with only two digits after floating point using f-string
 ###5-print_string.py
 
 Prints the string 3 times and then first 9 characters of string at the new line
+
+###6-concat.py
+
+Concatonates two string and then prints the result
