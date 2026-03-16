@@ -19,3 +19,7 @@ prints the alphabet expect q and e
 ###4-print_hexa.py
 
 prints numbers from 0 to 98 both in decimal and hexadecimal
+
+###5-print_comb2.py
+
+prints numbers from 0 to 99 in line with two digits(00, 01, ...)
