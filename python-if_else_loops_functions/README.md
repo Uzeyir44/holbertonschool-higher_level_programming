@@ -15,3 +15,7 @@ prints the whole english alphabet without any variables, modules or libraries
 ###3-print_alphabt.py
 
 prints the alphabet expect q and e
+
+###4-print_hexa.py
+
+prints numbers from 0 to 98 both in decimal and hexadecimal
