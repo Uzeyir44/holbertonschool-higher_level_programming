@@ -27,3 +27,7 @@ prints numbers from 0 to 99 in line with two digits(00, 01, ...)
 ###6-print_comb3.py
 
 prints all possibe combinations of two digit number without repeating digits
+
+###7-islower.py
+
+checks if the letter is lowercase or no
