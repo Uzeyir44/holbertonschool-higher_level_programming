@@ -6,7 +6,7 @@ for i in range(9):
 
         if (i != 0 or j != 1):
             print(", ", end="")
-        
+
         if (i != 8 or j != 9):
             print("{:02}".format(i*10 + j), end="")
         else:
