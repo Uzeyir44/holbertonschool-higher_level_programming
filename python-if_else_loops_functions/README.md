@@ -11,3 +11,7 @@ prints the last digit of number followed by various statements regarding its val
 ###2-print_alphabet.py
 
 prints the whole english alphabet without any variables, modules or libraries
+
+###3-print_alphabt.py
+
+prints the alphabet expect q and e
