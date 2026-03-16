@@ -23,3 +23,7 @@ prints numbers from 0 to 98 both in decimal and hexadecimal
 ###5-print_comb2.py
 
 prints numbers from 0 to 99 in line with two digits(00, 01, ...)
+
+###6-print_comb3.py
+
+prints all possibe combinations of two digit number without repeating digits
