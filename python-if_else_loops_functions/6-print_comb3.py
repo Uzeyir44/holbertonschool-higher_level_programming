@@ -3,8 +3,8 @@ for i in range(9):
     for j in range(i, 10):
         if (i == j):
             continue
-            
-        if (i != 0):
+
+        if (i != 0 or j != 1):
             print(", ", end="")
         
         if (i != 8 or j != 9):
