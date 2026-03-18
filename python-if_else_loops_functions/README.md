@@ -47,3 +47,7 @@ function that gets 2 argumnets and returns their sum
 ###11-pow.py
 
 function that takes two arguments a ans b, then returns a power of b
+
+###12-fizzbuzz.py
+
+function that prints numbers from 1 to 100, but instead of multipers of 3 prints Fizz, instead of multiples of 5 Buzz, instead of multiples of both FizzBuzz
