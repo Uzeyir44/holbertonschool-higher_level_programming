@@ -35,3 +35,7 @@ checks if the letter is lowercase or no
 ###8-uppercase.py
 
 converts string to uppercase and prints it
+
+###9-print_last_digit.py
+
+prints the last digit of a number
