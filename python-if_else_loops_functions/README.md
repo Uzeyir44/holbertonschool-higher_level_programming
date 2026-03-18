@@ -31,3 +31,7 @@ prints all possibe combinations of two digit number without repeating digits
 ###7-islower.py
 
 checks if the letter is lowercase or no
+
+###8-uppercase.py
+
+converts string to uppercase and prints it
