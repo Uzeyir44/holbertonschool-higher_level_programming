@@ -43,3 +43,7 @@ prints the last digit of a number
 ###10-add.py
 
 function that gets 2 argumnets and returns their sum
+
+###11-pow.py
+
+function that takes two arguments a ans b, then returns a power of b
