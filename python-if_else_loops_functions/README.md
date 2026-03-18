@@ -39,3 +39,7 @@ converts string to uppercase and prints it
 ###9-print_last_digit.py
 
 prints the last digit of a number
+
+###10-add.py
+
+function that gets 2 argumnets and returns their sum
