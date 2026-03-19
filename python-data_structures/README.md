@@ -35,3 +35,7 @@ Takes two tuples as arguments and returns a new tuple with first element equal t
 ###8-multiple_returns.py
 
 Returns the length of a given string and its first character
+
+###9-max_integer.py
+
+Returns the max element of the list
