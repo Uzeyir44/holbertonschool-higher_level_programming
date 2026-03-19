@@ -43,3 +43,7 @@ Returns the max element of the list
 ###10-divisible_by_2.py
 
 Creates a new list which has false at particular index if the element is not divisible by two and true if opposite
+
+###11-delete_at.py
+
+Deletes an element at a given index
