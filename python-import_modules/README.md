@@ -23,3 +23,11 @@ Takes the arguments from command line and prints them by order with their indexe
 ###3-infinite_add.py
 
 Takes all arguments from command line and prints their sum
+
+###variable_load_5.py
+
+Contains variable which will be used in other file
+
+###5-variable_load.py
+
+Imports variable from another file and prints it
