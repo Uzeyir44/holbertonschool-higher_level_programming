@@ -15,3 +15,7 @@ Replaces an element at the given index with a new element
 ###3-print_reversed_list_integer.py
 
 Prints the list of integers in reverse order
+
+###4-new_in_list.py
+
+Changes the element at a give index and returns a new list
