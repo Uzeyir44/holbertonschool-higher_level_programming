@@ -15,3 +15,7 @@ Conatains four functions for addition, substraction, multiplication and division
 ###1_calculation.py
 
 Imports functions from calcultor_1.py and uses them to print the results of these operations
+
+###2-args.py
+
+Takes the arguments from command line and prints them by order with their indexes
