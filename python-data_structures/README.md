@@ -39,3 +39,7 @@ Returns the length of a given string and its first character
 ###9-max_integer.py
 
 Returns the max element of the list
+
+###10-divisible_by_2.py
+
+Creates a new list which has false at particular index if the element is not divisible by two and true if opposite
