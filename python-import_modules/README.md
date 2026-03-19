@@ -19,3 +19,7 @@ Imports functions from calcultor_1.py and uses them to print the results of thes
 ###2-args.py
 
 Takes the arguments from command line and prints them by order with their indexes
+
+###3-infinite_add.py
+
+Takes all arguments from command line and prints their sum
