@@ -19,3 +19,7 @@ Prints the list of integers in reverse order
 ###4-new_in_list.py
 
 Changes the element at a give index and returns a new list
+
+###5-no_c.py
+
+Removes all C and c characters from the string and returns new string
