@@ -47,3 +47,7 @@ Creates a new list which has false at particular index if the element is not div
 ###11-delete_at.py
 
 Deletes an element at a given index
+
+###12-switch.py
+
+Switches the values of two arguments without the third one
