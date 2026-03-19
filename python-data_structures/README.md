@@ -31,3 +31,7 @@ Prints the matrix of integers
 ###7-add_tuple.py
 
 Takes two tuples as arguments and returns a new tuple with first element equal to the sum of the first elements of other tuples and second element equal to the sum of the second elements of other tuples
+
+###8-multiple_returns.py
+
+Returns the length of a given string and its first character
