@@ -11,3 +11,7 @@ Retrives an element with the given index from the list
 ###2-replace_in_list.py
 
 Replaces an element at the given index with a new element
+
+###3-print_reversed_list_integer.py
+
+Prints the list of integers in reverse order
