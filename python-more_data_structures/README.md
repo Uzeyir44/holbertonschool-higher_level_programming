@@ -47,3 +47,7 @@ Returns a key with the biggest integer
 ###11-multiply_list_map.py
 
 Multiplies each element of the list by given number and adds it to the new list using map
+
+###12-roman_to_int.py
+
+Converts roman numbers into integers
