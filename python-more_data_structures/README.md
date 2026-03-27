@@ -19,3 +19,7 @@ Finds equal elements in two sets
 ###4-only_diff_elements.py
 
 Returns elements that are only present in one set
+
+###5-number_keys.py
+
+Returns number of keys in the dictionary
