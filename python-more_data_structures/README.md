@@ -35,3 +35,7 @@ Replaces or adds key/value in a dictionary
 ###8-simple_delete.py
 
 Deletes a key in a dictionary. If a key doesn't exist, the dictionary won't change
+
+###9-multiply_by_2.py
+
+Multiplies all dictionary values by two
