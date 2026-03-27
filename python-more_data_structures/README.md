@@ -31,3 +31,7 @@ Sorts the dictionary by keys and then prints sorted dictionary
 ###7-update_dictionary.py
 
 Replaces or adds key/value in a dictionary
+
+###8-simple_delete.py
+
+Deletes a key in a dictionary. If a key doesn't exist, the dictionary won't change
