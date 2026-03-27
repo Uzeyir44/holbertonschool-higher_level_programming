@@ -23,3 +23,7 @@ Returns elements that are only present in one set
 ###5-number_keys.py
 
 Returns number of keys in the dictionary
+
+###6-print_sorted_dictionary.py
+
+Sorts the dictionary by keys and then prints sorted dictionary
