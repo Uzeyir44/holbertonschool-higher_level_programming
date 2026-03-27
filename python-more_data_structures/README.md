@@ -11,3 +11,7 @@ Replaces particular elemants in the list with another elements
 ###2-uniq_add.py
 
 Returns the sum of the unique elements
+
+###3-common_elements.py
+
+Finds equal elements in two sets
