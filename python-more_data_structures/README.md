@@ -27,3 +27,7 @@ Returns number of keys in the dictionary
 ###6-print_sorted_dictionary.py
 
 Sorts the dictionary by keys and then prints sorted dictionary
+
+###7-update_dictionary.py
+
+Replaces or adds key/value in a dictionary
