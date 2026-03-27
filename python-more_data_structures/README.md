@@ -42,4 +42,8 @@ Multiplies all dictionary values by two
 
 ###10-best_score.py
 
-Returns a key with the biggest integer value
+Returns a key with the biggest integer 
+
+###11-multiply_list_map.py
+
+Multiplies each element of the list by given number and adds it to the new list using map
