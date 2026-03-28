@@ -33,3 +33,7 @@ print: out of range
 ###5-raise_exception.py
 
 Rises a TypeError
+
+###6-raise_exception_msg.py
+
+Raises a name exception with a message
