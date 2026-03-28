@@ -29,3 +29,7 @@ If the division can't be done (/0):
 print: division by 0
 If my_list_1 or my_list_2 is too short
 print: out of range
+
+###5-raise_exception.py
+
+Rises a TypeError
