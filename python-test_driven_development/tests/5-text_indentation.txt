@@ -4,6 +4,11 @@
 >>> text_indentation("Holberton School")
 Holberton School
 
+# Test: text = string with blank line
+>>> text_indentation("Holberton\nSchool")
+Holberton
+School
+
 # Test: text = not string
 >>> text_indentation(123)
 Traceback (most recent call last):
