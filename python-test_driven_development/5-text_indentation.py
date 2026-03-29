@@ -27,7 +27,7 @@ def text_indentation(text):
             continue
 
         if (i == "." or i =="?" or i==":"):
-            print("{}\n".format(i))
+            print("{}".format(i))
             flag = True
         else:
             print("{}".format(i), end="")
