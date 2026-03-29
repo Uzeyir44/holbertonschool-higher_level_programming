@@ -6,29 +6,28 @@ This module contins a function that replases .? and : with two new lines
 
 def text_indentation(text):
     """
-    Prints each sentence in a new line
+    Prints a text with 2 new lines after '.', '?' and ':'
 
     Args:
-        text (string): the original text
+        text (str): input text
 
-    Return:
-        Does not return any value
-
-    Raise:
-        TypeError: if text is not str
+    Raises:
+        TypeError: if text is not a string
     """
-    if (type(text) is not str):
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
-    flag = False
-    for i in text:
-        if (flag and i == " "):
-            flag = False
-            continue
+    i = 0
+    while i < len(text):
+        char = text[i]
 
-        if (i == "." or i =="?" or i==":"):
-            print("{}".format(i))
-            flag = True
+        if char in ".?:":
+            print(char)
+            print()
+            i += 1
+            # skip spaces after punctuation
+            while i < len(text) and text[i] == " ":
+                i += 1
         else:
-            print("{}".format(i), end="")
-            flag = False
+            print(char, end="")
+            i += 1
