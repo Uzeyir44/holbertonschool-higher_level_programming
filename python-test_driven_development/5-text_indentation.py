@@ -31,4 +31,3 @@ def text_indentation(text):
             flag = True
         else:
             print("{}".format(i), end="")
-    print("")
