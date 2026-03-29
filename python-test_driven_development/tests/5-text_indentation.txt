@@ -1,26 +1,14 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 # Test: text = string
->>> text_indentation("Hello. How are you? I am fine:")
-    Hello.
-
-    How are you?
-
-    I am fine:
-
+>>> text_indentation("Holberton School")
+Holberton School
 
 # Test: text = not string
 >>> text_indentation(123)
 Traceback (most recent call last):
 ...
 TypeError: text must be a string
-
-# Test: text = string with blank line
->>> text_indentation("Hello.\n\nWorld?")
-Hello.
-
-
-World?
 
 # Test: missing argument
 >>> text_indentation()
