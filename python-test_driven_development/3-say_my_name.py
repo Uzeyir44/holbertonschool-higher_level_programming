@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains function that prints first and last name of user    
+This module contains function that prints first and last name of user
 """
 
 
