@@ -10,10 +10,10 @@ def print_square(size):
 
     Args:
         size (int): the length and width of square
-        
+
     Return:
         Does not return any value
-        
+
     Raise:
         TypeError: if size is not an int or if its float and less then 0
         ValueError: if size < 0
