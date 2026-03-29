@@ -1,2 +1,4 @@
+>>> from 0-add_integer import add_integer
+
 >>> add_integer(2.5, 3.3)
 5
