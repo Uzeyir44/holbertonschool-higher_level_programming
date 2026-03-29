@@ -22,7 +22,7 @@ def text_indentation(text):
 
     flag = False
     for i in text:
-        if (flag):
+        if (flag and i == " "):
             flag = False
             continue
 
@@ -31,3 +31,4 @@ def text_indentation(text):
             flag = True
         else:
             print("{}".format(i), end="")
+            flag = False
