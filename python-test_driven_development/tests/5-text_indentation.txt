@@ -2,9 +2,12 @@
 
 # Test: text = string
 >>> text_indentation("Hello. How are you? I am fine:")
-Hello.\n
-How are you?\n
-I am fine:\n
+    Hello.
+
+    How are you?
+
+    I am fine:
+
 
 # Test: text = not string
 >>> text_indentation(123)
