@@ -3,9 +3,7 @@
 # Test: text = string
 >>> text_indentation("Hello. How are you? I am fine:")
 Hello.
-
 How are you?
-
 I am fine:
 
 # Test: text = not string
