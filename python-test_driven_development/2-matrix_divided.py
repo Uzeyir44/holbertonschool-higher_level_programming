@@ -8,18 +8,18 @@ def matrix_divided(matrix, div):
     """
     Creates a new matrix the elements of which are the elements of given matrix
     divided by two
-    
+
     Args:
         matrix (list): given matrix
         div (int or float): number by which elements will be divided
-        
+
     Return:
         new_matrix (list): matrix with elements of given matrix divided my div
-        
+
     Raises:
-        TypeError: if div and elements of matrix are not an int or float, the lengthes
-        of rows in matrix are not equal
-        
+        TypeError: if div and elements of matrix are not an int or float, the
+        lengthes of rows in matrix are not equal
+
         ZeroDivisionError: if div == 0
     """
     row_length = len(matrix[0])
@@ -35,7 +35,9 @@ def matrix_divided(matrix, div):
         new_row = []
         for el in row:
             if (type(el) is not int and type(el) is not float):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of "
+                                "integers/floats"
+                )
 
             new_row.append(round(el / div, 2))
 
