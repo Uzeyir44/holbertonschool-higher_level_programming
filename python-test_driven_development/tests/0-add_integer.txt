@@ -2,3 +2,17 @@
 
 >>> add_integer(2.5, 3.3)
 5
+
+>>> add_integer("2", 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(2)
+100
+
+>>> add_integer(-1, -2)
+-3
+
+>>> add_integer(0, 0)
+0
