@@ -16,6 +16,7 @@ class Square(object):
 
     Methods:
         area (int): returns the area of the square
+        my_print (void): prints the square
 
     Raises:
         TypeError: if size is not an integer
@@ -72,6 +73,9 @@ class Square(object):
         return (self.__size**2)
 
     def my_print(self):
+        """
+        This function prints the square with # characters
+        """
         if (self.__size == 0):
             print("")
 
