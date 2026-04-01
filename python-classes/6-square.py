@@ -30,8 +30,8 @@ class Square(object):
         if (size < 0):
             raise ValueError("size must be >= 0")
         if (type(position) is not tuple
-            or any(type(x) is not int for x in position)
-            or any(x < 0 for x in position) or len(position) != 2):
+            or len(position) != 2
+            or not all(isinstance(n, int) and n >= 0 for n in position)):
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__size = size
@@ -66,7 +66,7 @@ class Square(object):
         if (value < 0):
             raise ValueError("size must be >= 0")
 
-        self.__size = value    
+        self.__size = value
 
     @property
     def position(self):
@@ -78,7 +78,7 @@ class Square(object):
         """
 
         return (self.__position)
-    
+
     @position.setter
     def position (self, value):
         """
@@ -88,15 +88,16 @@ class Square(object):
             value (tuple): new coordinates
 
         Raises:
-            TypeError: if value is not a tuple and its elements are not positive
-            integers
-        """        
+            TypeError: if value is not a tuple and
+            its elements are not positive integers
+        """
+   
         if (type(value) is not tuple
-            or any(type(x) is not int for x in value)
-            or any(x < 0 for x in value) or len(value) != 2):
+            or len(value) != 2
+            or not all(isinstance(n, int) and n >= 0 for n in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        self._position = value 
+        self._position = value
 
     def area(self):
         """
@@ -115,7 +116,7 @@ class Square(object):
         if (self.__size == 0):
             print("")
             return
-        
+
         for k in range(self.__position[1]):
             print("")
 
