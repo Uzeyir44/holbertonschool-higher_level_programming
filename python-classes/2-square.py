@@ -13,7 +13,7 @@ class Square(object):
 
     Attributes:
         size (int): private instance, the length of square
-        
+
     Raises:
         TypeError: if size is not an integer
         ValueError: if size < 0
