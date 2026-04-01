@@ -80,7 +80,7 @@ class Square(object):
         return (self.__position)
 
     @position.setter
-    def position (self, value):
+    def position(self, value):
         """
         This function sets a new value for position attribute
 
@@ -91,7 +91,7 @@ class Square(object):
             TypeError: if value is not a tuple and
             its elements are not positive integers
         """
-   
+
         if (type(value) is not tuple
             or len(value) != 2
             or not all(isinstance(n, int) and n >= 0 for n in value)):
