@@ -29,7 +29,7 @@ class Square(object):
             raise ValueError("size must be >= 0")
 
         self.__size = size
-    
+
     @property
     def size(self):
         """
@@ -39,12 +39,12 @@ class Square(object):
             int: the value of size
         """
         return (self.__size)
-    
+
     @size.setter
     def size(self, value):
         """
         This function sets a new value for size attribute
-        
+
         Args:
             value (int): new size
 
@@ -52,7 +52,7 @@ class Square(object):
             TypeError: if size is not an integer
             ValueError: if size < 0
 
-        """        
+        """
 
         if (type(value) is not int):
             raise TypeError("size must be an integer")
