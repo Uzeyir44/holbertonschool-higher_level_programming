@@ -31,3 +31,7 @@ You are not allowed to import any module
 
 - print() and str() should print the rectangle with the character #: (see example below)
 - if width or height is equal to 0, return an empty string
+
+###4-rectangle.py
+
+- repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
