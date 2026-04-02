@@ -19,3 +19,10 @@ Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
 - height must be an integer, otherwise raise a TypeError exception with - the message height must be an integer
 - if height is less than 0, raise a ValueError exception with the message height must be >= 0
 - Instantiation with optional width and height: def __init__(self, width=0, height=0):
+
+###2-rectangle.py
+
+- Public instance method: def area(self): that returns the rectangle area
+- Public instance method: def perimeter(self): that returns the rectangle perimeter:
+- if width or height is equal to 0, perimeter is equal to 0
+You are not allowed to import any module
