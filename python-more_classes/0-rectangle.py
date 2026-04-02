@@ -5,4 +5,7 @@ This module contains class Rectangle
 
 
 class Rectangle:
+    """
+    This class represents a rectangle
+    """
     pass
