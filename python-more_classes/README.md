@@ -39,3 +39,10 @@ You are not allowed to import any module
 ###5-rectangle.py
 
 - Print the message Bye rectangle...
+
+###6-rectangle.py
+
+- Public class attribute number_of_instances:
+- Initialized to 0
+- Incremented during each new instance instantiation
+- Decremented during each instance deletion
