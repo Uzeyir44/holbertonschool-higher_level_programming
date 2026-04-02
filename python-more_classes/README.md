@@ -35,3 +35,7 @@ You are not allowed to import any module
 ###4-rectangle.py
 
 - repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
+
+###5-rectangle.py
+
+- Print the message Bye rectangle...
