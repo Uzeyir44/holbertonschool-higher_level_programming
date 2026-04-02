@@ -46,3 +46,10 @@ You are not allowed to import any module
 - Initialized to 0
 - Incremented during each new instance instantiation
 - Decremented during each instance deletion
+
+###7-rectangle.py
+
+- Public class attribute print_symbol:
+- Initialized to #
+- Used as symbol for string representation
+- Can be any type
