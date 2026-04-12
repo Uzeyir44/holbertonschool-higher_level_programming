@@ -42,8 +42,6 @@ TypeError: flag must be an integer
 
 
 # Test present: integer_validator()
->>> BaseGeometry = __import__('base_geometry').BaseGeometry
->>> bg = BaseGeometry()
 >>> bg.integer_validator("age", 10)
 
 # Test tuple input (should raise TypeError)
