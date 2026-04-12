@@ -28,7 +28,7 @@ class Circle(Shape):
         perimeter: returns the perimeter of instance
     """
     def __init__(self, radius):
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         """
