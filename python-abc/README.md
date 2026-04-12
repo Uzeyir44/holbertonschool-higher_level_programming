@@ -23,3 +23,14 @@ Create a class named VerboseList that extends the Python list class. This custom
 ###task_03_countediterator.py
 
 Create a class named CountedIterator that extends the built-in iterator obtained from the iter function. The CountedIterator should keep track of the number of items that have been iterated over. Specifically, you will need to override the __next__ method to increment a counter each time an item is fetched.
+
+###task_04_flyingfish.py
+
+- Parent Classes Setup:
+ - Create a Fish class with methods swim (which prints "The fish is swimming") and habitat (which prints "The fish lives in water").
+ - Create a Bird class with methods fly (which prints "The bird is flying") and habitat (which prints "The bird lives in the sky").
+- Implementing FlyingFish:
+ - Construct a FlyingFish class that inherits from both Fish and Bird.
+ - Override the fly method to print "The flying fish is soaring!".
+ - Override the swim method to print "The flying fish is swimming!".
+ - Override the habitat method to print "The flying fish lives both in water and the sky!".
