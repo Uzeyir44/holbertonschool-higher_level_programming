@@ -39,6 +39,7 @@ class BaseGeometry:
         if (value <= 0):
             raise ValueError(f"{name} must be greater than 0")
 
+
 class Rectangle(BaseGeometry):
     """
     This class is a subclass of BaseGeometry and describes
@@ -52,7 +53,8 @@ class Rectangle(BaseGeometry):
         __height (int): height of rectangle
     """
     def __init__(self, width, height):
-        if (self.integer_validator("width", width)):
-            self.__width = width
-        if (self.integer_validator("height", height)):
-            self.__height = height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
+        self.__height = height
+        self.__width = width
