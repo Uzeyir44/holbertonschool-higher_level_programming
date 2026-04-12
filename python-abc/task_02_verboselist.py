@@ -48,5 +48,6 @@ class VerboseList(list):
         Args:
             item (int): index of a removed element
         """
-        print(f"Popped [{self[item]}] from the list")
-        super().pop(item)
+        value = super().pop(item)
+        print(f"Popped [{value}] from the list")
+        return value
