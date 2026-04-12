@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
 """
 This module contains a lookup function
 """
+
 
 def lookup(object):
     """
