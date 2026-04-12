@@ -46,7 +46,7 @@ class Rectangle(BaseGeometry):
 
     Args:
         BaseGeometry (BaseGeometry): a parent class
-    
+
     Attributes:
         __width (int): width of rectangle
         __height (int): height of rectangle
