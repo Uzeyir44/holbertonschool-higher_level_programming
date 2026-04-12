@@ -80,7 +80,7 @@ class Square(Rectangle):
         Rectangle (Rectangle): base class
 
     Attributes:
-        __size (int): value of the side 
+        __size (int): value of the side
     """
     def __init__(self, size):
         self.integer_validator("size", size)
@@ -95,5 +95,6 @@ class Square(Rectangle):
             int: the value of the area
         """
         return (self.__size**2)
+
     def __str__(self):
         return ("[Square] " + str(self.__size) + "/" + str(self.__size))
