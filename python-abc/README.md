@@ -34,3 +34,14 @@ Create a class named CountedIterator that extends the built-in iterator obtained
  - Override the fly method to print "The flying fish is soaring!".
  - Override the swim method to print "The flying fish is swimming!".
  - Override the habitat method to print "The flying fish lives both in water and the sky!".
+
+ ###task_05_dragon.py
+
+ Design two mixin classes, SwimMixin and FlyMixin, each equipped with methods swim and fly respectively. Next, construct a class Dragon that inherits from both these mixins. Your aim is to show that a Dragon instance can both swim and fly.
+
+- Creating Mixins:
+ - Design a mixin called SwimMixin with a method swim that prints "The creature swims!".
+ - Design another mixin called FlyMixin with a method fly that prints "The creature flies!".
+- Implementing Dragon:
+ - Construct a class named Dragon that inherits from both SwimMixin and FlyMixin.
+ - Within the Dragon class, you can add additional methods or attributes if desired, such as roar, which could print "The dragon roars!".
