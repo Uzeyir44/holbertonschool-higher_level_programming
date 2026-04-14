@@ -4,7 +4,7 @@ This module contains write_file function
 """
 
 
-def write_function(filename="", text=""):
+def write_file(filename="", text=""):
     """
     This function overwrites file with a new text
 
