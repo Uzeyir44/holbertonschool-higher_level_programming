@@ -103,3 +103,10 @@ Write a class Student that defines a student by: (based on 10-student.py)
 - You can assume json will always be a dictionary
 - A dictionary key will be the public attribute name
 - A dictionary value will be the value of the public attribute
+
+###12-pascal_triangle.py
+
+Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal's triangle of n:
+
+- Returns an empty list if n <= 0
+- You can assume n will be always an integer
