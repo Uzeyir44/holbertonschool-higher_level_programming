@@ -33,7 +33,7 @@ class Student:
                 "last_name": self.last_name,
                 "age": self.age
             }
-        if (attrs == None):
+        if (attrs is None):
             return (dct)
         new_dct = {}
         for i in attrs:
