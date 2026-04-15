@@ -31,3 +31,9 @@ Write a function that appends a string at the end of a text file (UTF8) and retu
 Write a function that returns the JSON representation of an object (string):
 
 - Prototype: def to_json_string(my_obj):
+
+###4-from_json_string.py
+
+Write a function that returns an object (Python data structure) represented by a JSON string:
+
+- Prototype: def from_json_string(my_str):
