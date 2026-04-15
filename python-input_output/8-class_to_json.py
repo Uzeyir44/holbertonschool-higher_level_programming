@@ -2,7 +2,6 @@
 """
 This module contains class_to_json function
 """
-import json
 
 
 def class_to_json(obj):
@@ -13,5 +12,4 @@ def class_to_json(obj):
     Args:
         obj: instances of any class
     """
-    json_string = json.dumps(obj)
-    return (json_string)
+    return (obj.__dict__)
