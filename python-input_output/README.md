@@ -94,3 +94,12 @@ Write a class Student that defines a student by: (based on 9-student.py)
 - Public method def to_json(self, attrs=None): that retrieves a dictionary representation of a Student instance (same as 8-class_to_json.py):
 - If attrs is a list of strings, only attribute names contained in this list must be retrieved.
 - Otherwise, all attributes must be retrieved
+
+###11-student.py
+
+Write a class Student that defines a student by: (based on 10-student.py)
+
+- Public method def reload_from_json(self, json): that replaces all attributes of the Student instance:
+- You can assume json will always be a dictionary
+- A dictionary key will be the public attribute name
+- A dictionary value will be the value of the public attribute
