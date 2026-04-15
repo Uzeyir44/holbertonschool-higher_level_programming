@@ -14,4 +14,4 @@ def from_json_string(my_str):
         my_str: json string
     """
     python_string = json.loads(my_str)
-    return(python_string)
+    return (python_string)
