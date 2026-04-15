@@ -45,3 +45,11 @@ Write a function that writes an Object to a text file, using a JSON representati
 - Prototype: def save_to_json_file(my_obj, filename):
 - You must use the with statement
 - You don't need to manage exceptions if the object can't be serialized.
+
+###6-load_from_json_file.py
+
+Write a function that creates an Object from a "JSON file":
+
+- Prototype: def load_from_json_file(filename):
+- You must use the with statement
+- You don't need to manage exceptions if the JSON string doesn't represent an object.
