@@ -10,7 +10,7 @@ def pascal_triangle(n):
 
     Args:
         n (int): the height of triangle
-    
+
     Return:
         ls (list): a list which contains other lists
         which represent the levels of pascal triangle
