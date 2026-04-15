@@ -40,6 +40,7 @@ class Student:
             if i in dct.keys():
                 new_dct[i] = dct[i]
         return (new_dct)
+
     def reload_from_json(self, json):
         """
         This function changes all attributes of instance
