@@ -48,6 +48,7 @@ class Student:
         Args:
             json (dict): dictionary with new values for instance
         """
-        self.first_name = json["first_name"]
-        self.last_name = json["last_name"]
-        self.age = json["age"]
+        if not json:
+            self.first_name = json["first_name"]
+            self.last_name = json["last_name"]
+            self.age = json["age"]
