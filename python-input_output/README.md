@@ -25,3 +25,9 @@ Write a function that appends a string at the end of a text file (UTF8) and retu
 - If the file doesn't exist, it should be created
 - You must use the with statement
 - You don't need to manage file permission or file doesn't exist exceptions.
+
+###3-to_json_string.py
+
+Write a function that returns the JSON representation of an object (string):
+
+- Prototype: def to_json_string(my_obj):
