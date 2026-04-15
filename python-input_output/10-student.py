@@ -40,6 +40,3 @@ class Student:
             if i in dct.keys():
                 new_dct[i] = dct[i]
         return (new_dct)
-
-u = Student("Ali", "Abuzarov", 17)
-print(u.to_json(["middle name"]))
