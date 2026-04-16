@@ -11,3 +11,18 @@ Create a basic serialization module that adds the functionality to serialize a P
 - The function load_and_deserialize take 1 parameters:
 
  - filename: The filename of the input JSON file This function returns a Python Dictionary with the deseialized JSON data from the file.
+
+###task_01_pickle.py.
+
+Create a custom Python class named CustomObject. This class should have the following attributes:
+
+- name (a string)
+
+- age (an integer)
+
+- is_student (a boolean)
+
+Implement two methods within this class:
+
+- serialize(self, filename): This method will take a filename as its parameter. Using the pickle module, it will serialize the current instance of the object and save it to the provided filename.
+- @classmethod deserialize(cls, filename): This class method will take a filename as its parameter. Using the pickle module, it will load and return an instance of the CustomObject from the provided filename.
