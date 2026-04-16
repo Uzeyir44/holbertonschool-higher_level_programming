@@ -23,7 +23,7 @@ class CustomObject:
         self.name = name
         self.age = age
         self.is_student = is_student
-    
+
     def display(self):
         """
         This function prints the attributes of class instances
