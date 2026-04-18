@@ -38,3 +38,19 @@ Inside this function:
 - Write the serialized JSON data to data.json.
 - The function should return True if the conversion was successful.
 - Handle exceptions, such as file not found. Function should return False in this case.
+
+###task_03_xml.py
+
+- Define two main functions:
+ - serialize_to_xml(dictionary, filename): This will take a Python dictionary and a filename as parameters. It should serialize the dictionary into XML and save it to the given filename.
+
+ - deserialize_from_xml(filename): This will take a filename as its parameter, read the XML data from that file, and return a deserialized Python dictionary.
+
+- For serialize_to_xml:
+ - Create a root element, e.g., <data>.
+ - Iterate through the dictionary items and add them as child elements to the root.
+ - Write the XML tree to the provided filename using the ET.ElementTree class.
+- For deserialize_from_xml:
+ - Parse the XML file using ET.parse.
+ - Navigate through the XML elements to reconstruct the dictionary.
+ - Return the constructed dictionary.
