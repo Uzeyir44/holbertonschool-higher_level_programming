@@ -26,3 +26,15 @@ Implement two methods within this class:
 
 - serialize(self, filename): This method will take a filename as its parameter. Using the pickle module, it will serialize the current instance of the object and save it to the provided filename.
 - @classmethod deserialize(cls, filename): This class method will take a filename as its parameter. Using the pickle module, it will load and return an instance of the CustomObject from the provided filename.
+
+###task_02_csv.py
+
+- Define a function named convert_csv_to_json that takes the CSV filename as its parameter and writes the JSON data to data.json.
+
+Inside this function:
+
+- Use Python's csv module to open the CSV file and read the data. Use the DictReader class to convert each row into a dictionary.
+- Serialize the list of dictionaries using the json module.
+- Write the serialized JSON data to data.json.
+- The function should return True if the conversion was successful.
+- Handle exceptions, such as file not found. Function should return False in this case.
