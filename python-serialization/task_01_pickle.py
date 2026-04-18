@@ -2,6 +2,7 @@
 """
 This module contains CustomObject class
 """
+
 import pickle
 
 
@@ -19,7 +20,11 @@ class CustomObject:
         serialize: serializes instace and saves it in file
         deserialize: creates new instance with data in file
     """
-    def __init__(self, name, age, is_student):
+
+    def __init__(self, name:str, age:int, is_student:bool):
+        """
+        inside the init file
+        """
         self.name = name
         self.age = age
         self.is_student = is_student
@@ -28,9 +33,9 @@ class CustomObject:
         """
         This function prints the attributes of class instances
         """
-        print(f"Name: {self.name}")
-        print(f"Age: {self.age}")
-        print(f"Is student: {self.is_student}")
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
         """
@@ -39,7 +44,7 @@ class CustomObject:
         Args:
             filename: path to the file
         """
-        with open(filename, mode="wb") as file:
+        with open(filename, 'wb') as file:
             pickle.dump(self, file)
 
     @classmethod
@@ -50,5 +55,9 @@ class CustomObject:
         Args:
             filename: path to the file
         """
-        with open(filename, mode="rb") as file:
-            return (pickle.load(file))
+        with open(filename, 'rb') as file:
+            try:
+                deserialized_list = pickle.load(file)
+                return deserialized_list
+            except Exception:
+                pass
