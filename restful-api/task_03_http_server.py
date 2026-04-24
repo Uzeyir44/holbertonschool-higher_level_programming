@@ -45,7 +45,7 @@ class MyHandler(BaseHTTPRequestHandler):
         else:
             self.send_response(404)
             self.end_headers()
-            self.wfile.write(b"Not Found")
+            self.wfile.write(b"Endpoint not found")
 
 def run(class_server=HTTPServer, class_handler=MyHandler):
     """
