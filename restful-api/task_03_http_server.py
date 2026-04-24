@@ -18,7 +18,12 @@ class MyHandler(BaseHTTPRequestHandler):
         """
         This function send different data to the web-page regarding endpoints
         """
-        if (self.path == "/data"):
+        if self.path == "/":
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            self.wfile.write(b"Hello, this is a simple API!")
+        elif (self.path == "/data"):
             data = {
                 "name": "John",
                 "age": 30,
