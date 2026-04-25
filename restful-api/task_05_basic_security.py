@@ -37,7 +37,7 @@ def verify(username, password):
 @app.route("/basic-protected")
 @auth.login_required
 def basic_protected():
-    return ({"message": "Basic Auth: Access Granted"})
+    return ("Basic Auth: Access Granted")
 
 @app.route("/login", methods=["POST"])
 def login():
@@ -48,7 +48,7 @@ def login():
     
     user = users.get(username)
     if not user or not check_password_hash(user["password"], password):
-        return (jsonify({"msg": "Bad credentials"}), 401)
+        return ("Bad credentials", 401)
     
     token = create_access_token(
         identity=username, 
@@ -60,7 +60,7 @@ def login():
 @app.route("/jwt-protected")
 @jwt_required()
 def jwt_protected():
-    return (jsonify({"message": "JWT Auth: Access Granted"}))
+    return ("JWT Auth: Access Granted")
 
 @app.route("/admin-only")
 @jwt_required()
@@ -70,7 +70,7 @@ def admin_only():
     if (claims.get("role") != "admin"):
         return (jsonify({"error": "Admin access required"}), 403)
     
-    return jsonify({"message": "Admin Access: Granted"})
+    return ("Admin Access: Granted")
 
 if (__name__ == "__main__"):
     app.run(debug=True)
