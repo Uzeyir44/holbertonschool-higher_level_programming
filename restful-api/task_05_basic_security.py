@@ -15,11 +15,6 @@ jwt = JWTManager(app)
 
 auth = HTTPBasicAuth()
 
-basic_users = {
-    "jane": generate_password_hash("jane2007"),
-    "john": generate_password_hash("john2008")
-}
-
 users = {
     "user1": {
         "username": "user1",
@@ -36,7 +31,7 @@ users = {
 @auth.verify_password
 def verify(username, password):
     if username in users:
-        return (check_password_hash(basic_users[username], password))
+        return (check_password_hash(users[username], password))
     return (False)
 
 @app.route("/basic-protected")
