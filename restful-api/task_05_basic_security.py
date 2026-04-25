@@ -43,8 +43,15 @@ def basic_protected():
 def login():
     data = request.get_json()
     
+    if not data:
+        return ("Bad credentials", 401)
+
+    
     username = data.get("username")
     password = data.get("passsword")
+    
+    if not username or not password:
+        return ("Bad credentials", 401)
     
     user = users.get(username)
     if not user or not check_password_hash(user["password"], password):
