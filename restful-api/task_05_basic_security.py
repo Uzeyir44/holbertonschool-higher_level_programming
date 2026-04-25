@@ -10,7 +10,7 @@ from flask_jwt_extended import (
 )
 
 app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "jwt_secret_key"
+app.config["JWT_SECRET_KEY"] = "super-secret-key"
 jwt = JWTManager(app)
 
 auth = HTTPBasicAuth()
@@ -31,7 +31,7 @@ users = {
 @auth.verify_password
 def verify(username, password):
     if username in users:
-        return (check_password_hash(users[username], password))
+        return (check_password_hash(users[username]["password"], password))
     return (False)
 
 @app.route("/basic-protected")
