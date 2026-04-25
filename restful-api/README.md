@@ -72,3 +72,26 @@
   - If the request body is not valid JSON, return 400 with {"error":"Invalid JSON"}.
   - If username is missing, return 400 with {"error":"Username is required"}.
   - If username already exists, return 409 with {"error":"Username already exists"}.
+
+  ###task_05_basic_security.py
+
+- Basic Authentication:
+ - Install Flask-HTTPAuth:
+  - Run: pip install Flask-HTTPAuth.
+ - Set up Basic HTTP Authentication:
+  - Create a list of users and their hashed passwords.
+  - Use the werkzeug.security library for password hashing and verification.
+ - Protect Routes with Basic Authentication:
+  - Use the @auth.login_required decorator to protect certain routes.
+- Token-based Authentication with JWT:
+ - Install Flask-JWT-Extended:
+  - Run: pip install Flask-JWT-Extended.
+ - Set up JWT-based Authentication:
+  - Use a secret key for token generation and validation.
+  - Create a route /login where users can log in with their credentials and receive a JWT token.
+ - Protect Routes with JWT Tokens:
+  - Use the @jwt_required() decorator to protect certain routes.
+- Implement Role-based Access Control:
+  - Add roles (e.g., admin, user) to your users.
+  - Create routes that should only be accessible to certain roles.
+  - Implement checks to ensure the user's role matches the required role for accessing specific routes.
