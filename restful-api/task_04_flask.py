@@ -42,7 +42,7 @@ def new_user():
     
     users[username] = data
     return (jsonify({
-        "message": "User added successfully",
+        "message": "User added",
         "user": data
     }), 201)
     
