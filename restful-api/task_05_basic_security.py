@@ -71,3 +71,6 @@ def admin_only():
         return (jsonify({"error": "Admin access required"}), 403)
     
     return jsonify({"message": "Admin Access: Granted"})
+
+if (__name__ == "__main__"):
+    app.run(debug=True)
