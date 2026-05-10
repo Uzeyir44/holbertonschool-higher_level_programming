@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Lists all states from the database hbtn_0e_0_usa.
-Usage: ./0-select_states.py <mysql username> <mysql password> <database name>
+Lists all values in the states table where name matches the argument
+in a way that is safe from SQL injection.
 """
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
-    # Access arguments provided in the command line
     user_name = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
+    st_name = sys.argv[4]
 
-    # Connect to the MySQL server
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -21,15 +21,12 @@ if __name__ == "__main__":
         db=db_name
     )
 
-    # Create a cursor object to execute queries
     cursor = db.cursor()
 
-    # Execute the SQL query and sort by states.id
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+    cursor.execute(query, (st_name,))
 
-    # Fetch all the rows from the executed query
     query_rows = cursor.fetchall()
-
     for row in query_rows:
         print(row)
 
