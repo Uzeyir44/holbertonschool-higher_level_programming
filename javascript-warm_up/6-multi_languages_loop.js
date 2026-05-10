@@ -7,5 +7,5 @@ const ls = [
 ];
 
 for (let i = 0; i < 3; i++) {
-  console.log(ls[i] + '\n');
+  console.log(ls[i]);
 }
