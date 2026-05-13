@@ -25,3 +25,7 @@ Write a JavaScript script that toggles the class of the header element when the 
 Write a JavaScript script that adds a li element to a list when the user clicks on the element with id add_item:
 
 - The new element must be: <li>Item</li> The new element must be added to the ul element with class my_list
+
+###5-script.js
+
+Write a JavaScript script that updates the text of the header element to New Header!!! when the user clicks on the element with id update_header
