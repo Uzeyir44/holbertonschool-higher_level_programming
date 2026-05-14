@@ -43,3 +43,10 @@ Write a JavaScript script that fetches and lists the title for all movies by usi
 
 - All movie titles must be list in the HTML ul element with id list_movies
 - You must use the Fetch API.
+
+###8-script.js
+
+Write a JavaScript script that fetches from https://hellosalut.stefanbohacek.com/?lang=fr and displays the value of hello from that fetch in the HTML element with id hello.
+
+- The translation of “hello” must be displayed in the HTML element with id hello
+- Your script must work when it is imported from the <head> tag
