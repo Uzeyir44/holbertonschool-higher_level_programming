@@ -20,10 +20,6 @@ def generate_invitations(template_content, attendees):
     for i in attendees:
         template = template_content
 
-        if len(template) == 0:
-            print("Template is empty, no output files generated.")
-            return
-        
         if not isinstance(template, str):
             print(f"Error: template must be a string, got {type(template)}")
             return
@@ -34,6 +30,10 @@ def generate_invitations(template_content, attendees):
         
         if not isinstance(i, dict):
             print(f"Error: list must contain dictionaries, got {type(item)}")
+            return
+
+        if len(template) == 0:
+            print("Template is empty, no output files generated.")
             return
 
         template = empty_data(template, i, 'name')
