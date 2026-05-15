@@ -4,7 +4,7 @@ def generate_invitations(template_content, attendees):
             placeholder = '{' + element + '}'
             return(template.replace(placeholder, check_el(dictionary[element])))
         except KeyError:
-            return(template.replace(placeholder, element+':N/A'))
+            return(template.replace(placeholder, 'N/A'))
     
     def check_el(element):
         if element == None:
