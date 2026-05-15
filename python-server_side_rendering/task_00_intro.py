@@ -11,12 +11,11 @@ def generate_invitations(template_content, attendees):
         return
 
     for i in attendees:
-        with open(template_content, 'r') as file:
-            template = file.read()
-
-            if len(template) == 0:
-                print("Template is empty, no output files generated.")
-                return
+        template = template_content
+        
+        if len(template) == 0:
+            print("Template is empty, no output files generated.")
+            return
         
         if not isinstance(template, str):
             print(f"Error: template must be a string, got {type(template)}")
