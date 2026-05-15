@@ -1,4 +1,11 @@
 def generate_invitations(template_content, attendees):
+    def empty_data(template, dictionary, element):
+        try:
+            placeholder = '{' + element + '}'
+            return(template.replace(placeholder, check_el(dictionary[element])))
+        except KeyError:
+            return(template.replace(placeholder, element+':N/A'))
+    
     def check_el(element):
         if element == None:
             return ('N/A')
@@ -12,7 +19,7 @@ def generate_invitations(template_content, attendees):
 
     for i in attendees:
         template = template_content
-        
+
         if len(template) == 0:
             print("Template is empty, no output files generated.")
             return
@@ -29,13 +36,23 @@ def generate_invitations(template_content, attendees):
             print(f"Error: list must contain dictionaries, got {type(item)}")
             return
 
-        template = template.replace('{name}', check_el(i['name']))
-        template = template.replace('{event_title}', check_el(i['event_title']))
-        template = template.replace('{event_date}', check_el(i['event_date']))
-        template = template.replace('{event_location}', check_el(i['event_location']))
+        template = empty_data(template, i, 'name')
+        template = empty_data(template, i, 'event_title')
+        template = empty_data(template, i, 'event_date')
+        template = empty_data(template, i, 'event_location')
 
         output = 'output_' + str(n) + '.txt'
         with open(output, 'w') as file:
             file.write(template)
 
         n += 1
+attendees = [
+    {"name": "Alice", "event_title": "Python Conference", "event_date": "2023-07-15", "event_location": "New York"},
+    {"name": "Bob", "event_title": "Data Science Workshop", "event_date": "2023-08-20", "event_location": "San Francisco"},
+    {"name": "Charlie", "event_title": "AI Summit", "event_date": None, "event_location": "Boston"}
+]
+
+with open('template.txt', 'r') as file:
+    template = file.read()
+
+generate_invitations(template, attendees)
