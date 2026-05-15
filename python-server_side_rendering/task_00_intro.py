@@ -11,7 +11,7 @@ def generate_invitations(template_content, attendees):
         return
 
     for i in attendees:
-        with open('template.txt', 'r') as file:
+        with open(template_content, 'r') as file:
             template = file.read()
 
             if len(template) == 0:
