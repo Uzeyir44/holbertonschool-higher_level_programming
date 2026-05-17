@@ -3,7 +3,6 @@
 from flask import Flask, render_template, request
 import json
 import csv
-import os
 
 app = Flask(__name__)
 
@@ -39,58 +38,83 @@ def items():
         return "Error decoding JSON", 500
 
 
+def read_json():
+    with open("products.json", "r") as file:
+        data = json.load(file)
+
+        if isinstance(data, dict):
+            return data.get("products", [])
+
+        return data
+
+
+def read_csv():
+    with open("products.csv", newline="") as file:
+        reader = csv.DictReader(file)
+        return list(reader)
+
+
 @app.route("/products")
 def products():
-    # Get from request
+
     source = request.args.get("source")
     product_id = request.args.get("id")
 
-    data = []
+    try:
 
-    if source == "json":
+        if source == "json":
+            data = read_json()
 
-        try:
-            with open("products.json", 'r') as file:
-                reader = json.load(file)
-                data = reader
+        elif source == "csv":
+            data = read_csv()
 
-        except FileNotFoundError:
-            return render_template("product_display.html", error="File not found")
-
-        except json.JSONDecodeError:
-            return render_template("product_display.html", error="Error decoding JSON")
-
-    elif source == "csv":
-
-        try:
-            with open("products.csv", newline="") as file:
-                reader = csv.DictReader(file)
-                data = list(reader)
-
-        except FileNotFoundError:
-            return render_template("product_display.html", error="File not found")
-
-        except json.JSONDecodeError:
-            return "Error decoding JSON", 500
-
-    else:
-        return render_template("product_display.html", error="Wrong source")
-
-    # Append a dictionnary with only one element to fit with HTML prerequisites
-    if product_id:
-        filtered = []
-        item_found = False
-        for item in data:
-            if str(item.get("id")) == product_id:
-                item_found = True
-                filtered.append(item)
-
-        if item_found is True:
-            return render_template("product_display.html", products=filtered)
         else:
-            return render_template("product_display.html", error="Product not found")
+            return render_template(
+                "product_display.html",
+                error="Wrong source"
+            )
 
-    return render_template("product_display.html", products=data)
+    except FileNotFoundError:
+        return render_template(
+            "product_display.html",
+            error="File not found"
+        )
+
+    except json.JSONDecodeError:
+        return render_template(
+            "product_display.html",
+            error="Error decoding JSON"
+        )
+
+    except Exception:
+        return render_template(
+            "product_display.html",
+            error="Error reading file"
+        )
+
+    if product_id:
+
+        filtered_products = []
+
+        for product in data:
+            if str(product.get("id")) == str(product_id):
+                filtered_products.append(product)
+
+        if not filtered_products:
+            return render_template(
+                "product_display.html",
+                error="Product not found"
+            )
+
+        return render_template(
+            "product_display.html",
+            products=filtered_products
+        )
+
+    return render_template(
+        "product_display.html",
+        products=data
+    )
 
 
 if __name__ == "__main__":
